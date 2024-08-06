@@ -2,33 +2,22 @@
 <html>
   <head>
     <title>Text Replacer</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        padding: 10px;
-        width: 200px;
-        text-align: center;
-      }
-      input {
-        margin: 5px 0;
-        padding: 5px;
-        width: 100%;
-      }
-      button {
-        margin: 5px 0;
-        padding: 5px;
-        width: 100%;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h3>Text Replacer</h3>
-    <div>
-      <input id="textToReplace" type="text" placeholder="Text to replace" />
-      <input id="replacementText" type="text" placeholder="Replacement text" />
-      <button id="replaceTextButton">Replace Text</button>
+    <div class="popup-container">
+      <input type="text" id="find-input" placeholder="Find" />
+      <input type="text" id="replace-input" placeholder="Replace with" />
+      <!-- <button id="find-button">Find</button> -->
+      <!-- <button id="replace-button">Replace</button> -->
+      <button id="replace-all-button">Replace All</button>
+      <!-- <label>
+        <input type="checkbox" id="match-case-checkbox" />Match Case
+      </label>
+      <label>
+        <input type="checkbox" id="whole-words-checkbox" />Whole Words
+      </label> -->
     </div>
-
     <script src="popup.js"></script>
   </body>
 </html>
